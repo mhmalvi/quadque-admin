@@ -4,7 +4,6 @@
 
     <!-- page js -->
     <script src="{{ asset('backend/assets/vendors/chartjs/Chart.min.js')}}"></script>
-    <script src="{{ asset('backend/assets/js/pages/dashboard-default.js')}}"></script>
 
     <!-- Core JS -->
     <script src="{{ asset('backend/assets/js/app.min.js')}}"></script>
