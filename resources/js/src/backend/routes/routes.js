@@ -1,5 +1,6 @@
 import Home from '../../../components/backend/views/Home.vue'
 import SignIn from '../../../components/backend/views/auth/SignIn.vue'
+import UserList from '../../../components/backend/User.vue'
 let routes = [
     {
         path:'/',
@@ -15,6 +16,14 @@ let routes = [
         component:SignIn,
         meta:{
             auth:false
+        }
+    },
+    {
+        path:'/user-list',
+        name:'UserList',
+        component:UserList,
+        meta:{
+            auth:true
         }
     },
 ]

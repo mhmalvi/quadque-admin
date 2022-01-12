@@ -1,16 +1,12 @@
 <template>
-    <master-layout>
-        <h1>Welcome to Admin Panel</h1>
-    </master-layout>
+    <div>
+        <h1>Hello world {{base_url}}</h1>
+    </div>
 </template>
 <script>
-import { inject } from '@vue/runtime-core'
-import MasterLayout from '../layouts/MasterLayout.vue'
+
+import { inject } from 'vue'
 export default {
- components:{
-     MasterLayout
- },
- 
     setup(){
         let base_url = inject('base_url')
 
@@ -28,6 +24,5 @@ export default {
             getUser
         }
     }
-
 }
 </script>

@@ -21,3 +21,12 @@ Route::group(['namespace' => 'API\Backend\Auth', 'middleware' => 'api'], functio
     Route::post('signout', 'AuthController@signOut');
 
 });
+
+
+Route::group(['namespace' => 'API\Backend', 'middleware' => 'auth:sanctum'], function(){
+
+    // Route::post('signup', 'AuthController@signUp');
+  
+    Route::get('get-user', 'UserController@getUser');
+
+});
