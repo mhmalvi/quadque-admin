@@ -1,4 +1,5 @@
-<?php 
+<?php
+
 namespace App\CrudMachanism;
 
 use App\CrudMessage\CrudMessage;
@@ -9,8 +10,8 @@ class DataDeletion
     {
         $result = $model::find($id)->delete();
 
-        if($result){
-            $result =  new CrudMessage('Department');
+        if ($result) {
+            $result =  new CrudMessage($message);
 
             return $result->deleteMsg();
         }
